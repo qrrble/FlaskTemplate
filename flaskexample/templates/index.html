@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Sample Flask App</title>
+        <link rel="stylesheet" href={{ url_for('static',filename='styles/style.css') }}>
+        <script src={{ url_for('static',filename='styles/script.js') }}></script>
+    </head>
+    <body>
+
+        <h1>Sample Flask App</h1>
+        This app produces a scatterplot of N random points, where N is an integer.
+
+        <br>
+        Enter an integer value:<br>
+        <form method="POST">
+		<input name="integer_input" size="20">
+    	<input type="submit">
+		</form>
+
+        <br>
+        If you input something that's not an integer, there will be an error message (try it!)
+
+    </body>
+</html>

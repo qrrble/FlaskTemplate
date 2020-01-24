@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Sample Flask App</title>
+        <link rel="stylesheet" href={{ url_for('static',filename='styles/style.css') }}>
+        <script src={{ url_for('static',filename='styles/script.js') }}></script>
+    </head>
+    <body>
+
+
+    <h1>Sample Flask App</h1>
+    <a href="javascript:history.back()">Go Back</a>
+
+    <br><br>
+    Here's the plot!
+    <br>
+    <img height = "300px" src="{{ output_plot }}" >
+
+    </body>
+</html>
